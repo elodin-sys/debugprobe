@@ -1,0 +1,28 @@
+#ifndef BOARD_ALEPH_H_
+#define BOARD_ALEPH_H_
+
+#define PROBE_IO_RAW
+#define PROBE_CDC_UART
+#define PROBE_PIN_RESET 9
+
+// PIO config
+#define PROBE_SM 0
+#define PROBE_PIN_OFFSET 12
+#define PROBE_PIN_SWCLK (PROBE_PIN_OFFSET + 0) // GPIO 12
+#define PROBE_PIN_SWDIO (PROBE_PIN_OFFSET - 1) // GPIO 11
+
+// UART config
+#define PROBE_UART_TX 4
+#define PROBE_UART_RX 5
+#define PROBE_UART_INTERFACE uart1
+#define PROBE_UART_BAUDRATE 115200
+
+#define PROBE_USB_CONNECTED_LED 24
+#define PROBE_DAP_CONNECTED_LED 25
+#define PROBE_DAP_RUNNING_LED 0
+#define PROBE_UART_RX_LED 1
+#define PROBE_UART_TX_LED 2
+
+#define PROBE_PRODUCT_STRING "Aleph FC Debug Probe"
+
+#endif
