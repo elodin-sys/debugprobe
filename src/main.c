@@ -133,6 +133,8 @@ int main(void) {
 
     DAP_Setup();
 
+    probe_gpio_init();
+
     probe_info("Welcome to debugprobe!\n");
 
     if (THREADED) {

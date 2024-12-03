@@ -175,7 +175,6 @@ void probe_deinit(void)
     pio_sm_set_enabled(pio0, PROBE_SM, 0);
     pio_remove_program(pio0, &probe_program, probe.offset);
 
-    probe_assert_reset(1);	// de-assert nRESET
     probe_gpio_deinit();
     probe.initted = 0;
   }
