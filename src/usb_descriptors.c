@@ -99,7 +99,7 @@ uint8_t const * tud_hid_descriptor_report_cb(uint8_t itf)
 
 uint8_t desc_configuration[] =
 {
-  TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, CONFIG_TOTAL_LEN, 0, 500),
+  TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL, 0, CONFIG_TOTAL_LEN, TUSB_DESC_CONFIG_ATT_SELF_POWERED, 500),
   // Interface 0
 #if (PROBE_DEBUG_PROTOCOL == PROTO_DAP_V1)
   // HID (named interface)
