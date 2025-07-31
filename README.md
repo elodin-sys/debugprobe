@@ -15,6 +15,18 @@ Debug Probe documentation can be found at the [Raspberry Pi Microcontroller Docu
 
 For the purpose of making changes or studying of the code, you may want to compile the code yourself.
 
+## Dependencies
+
+Download and install the official ARM GNU toolchain from ARM's website
+Add it to your PATH
+
+Download and install the RPI Pico SDK: https://github.com/raspberrypi/pico-sdk
+Initialize the TinyUSB submodule:
+Run git submodule update --init in the Pico SDK directory
+
+Set the path to include it:
+export PICO_SDK_PATH=/path/to/pico-sdk
+
 First, clone the repository:
 ```
 git clone https://github.com/raspberrypi/debugprobe
